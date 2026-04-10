@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz assignment group F</title>
+  </head>
+
+  <body>
+    <div class="point-counter">Poäng: 0</div>
+    <div class="wrapper-container">
+    
+      <main class="quiz-container">
+        <div hidden id="approved"></div>
+        <div hidden id="notapproved"></div>
+
+        <div class="question-area">
+          <h2 id="question-text"></h2>
+          <div class="alternative-wrapper">
+            <div class="questions-container">
+              <input type="radio" name="answer-radio" value="0" id="alternative-1" />
+              <label for="alternative-1" id="answer-text-1" ></label>
+            </div>
+
+            <div class="questions-container">
+              <input type="radio" name="answer-radio" value="1" id="alternative-2" />
+              <label for="alternative-2" id="answer-text-2" ></label>
+            </div> 
+
+            <div class="questions-container">
+              <input type="radio" name="answer-radio" value="2" id="alternative-3"/>
+              <label for="alternative-3" id="answer-text-3"  ></label>
+            </div>
+
+            <div class="questions-container">
+              <input type="radio" name="answer-radio" value="3" id="alternative-4"  />
+              <label for="alternative-4" id="answer-text-4" ></label>
+            </div>
+          </div>
+
+          <button id="next-question">Nästa fråga</button>
+        
+
+          <p id="user-error-message"></p>
+        </div>
+      </main >
+      <div hidden class="final-result">
+        <p class="result-text"></p>
+        <button class="reset-game">Börja om</button>
+       
+      </div> 
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
